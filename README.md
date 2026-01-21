@@ -1,9 +1,35 @@
-- 👋 Hi, I’m @GLP749
-- 👀 I’m interested in Coding in C++, C, Javascript, Java ynd Python
-- 🌱 I’m currently learning to program at my school
-- 📫 You can reach me by writing me an E-Mail: joshuapieber66@gmail.com
+# NFC Lagersystem – Web-Prototyp
 
-<!---
-GLP749/GLP749 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Dieser Prototyp liefert ein kleines Backend und eine Tailwind-basierte Weboberfläche für ein NFC-basiertes Lagersystem. Die UI spricht ein einfaches JSON-API an und zeigt Scan-Ereignisse, Bestände und ein Bewegungsprotokoll.
+
+## Projektstruktur
+
+```
+public/
+  index.html   # Tailwind UI, hier kannst du deine Seiten anpassen
+  app.js       # Frontend-Logik (API-Aufrufe, UI-Updates)
+server.js      # Express-Backend mit Mock-Daten
+```
+
+## Starten
+
+1. Abhängigkeiten installieren:
+
+```bash
+npm install
+```
+
+2. Server starten:
+
+```bash
+npm start
+```
+
+3. Öffne `http://localhost:3000` im Browser.
+
+## API (Mock)
+
+- `GET /api/health`
+- `GET /api/inventory`
+- `GET /api/logs`
+- `POST /api/scan`
